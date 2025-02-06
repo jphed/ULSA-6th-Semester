@@ -1,19 +1,11 @@
+# ULSA 6th Semester
 
-
-
-
-# My GitHub Repository
-
-This is a basic repository to demonstrate Markdown.
+Information Technologies and Telecommunication
 
 ## Features
 
-- Simple Markdown formatting
-- GitHub repository setup
-- Easy to follow instructions
-
-## Installation
-
-To clone this repository:
-
-
+- Probability and Statistics
+- La Salle, a life project
+- Software Engineering II
+- Artificial Intelligence
+- Databases II
