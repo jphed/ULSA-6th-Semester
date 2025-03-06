@@ -1,5 +1,4 @@
 import termcolor
-
 from logic import *
 
 mostaza = Symbol('Mostaza')
@@ -36,10 +35,8 @@ knowledge = And(
 )
 
 knowledge.add(Not(mostaza))
-knowledge.add(Not(cocina))  
+knowledge.add(Not(cocina))
 knowledge.add(Not(pistola))
-
-# Tarea: que fue que nosotros sabe (No modificar)
 
 knowledge.add(Or(
     Not(mostaza),
@@ -47,7 +44,6 @@ knowledge.add(Or(
     Not(llave),
 ))
 
-# 2 conocimiento adicionales para saber que fue que nosotros sabe
 knowledge.add(Or(
     Not(moradillo),
     Not(billar),
@@ -60,5 +56,11 @@ knowledge.add(Or(
     Not(cuchillo),
 ))
 
+knowledge.add(Or(  
+    And(moradillo, billar, llave),
+    And(escarlata, cocina, cuchillo)
+))
+
 print(knowledge.formula())
+
 check_knowledge(knowledge)
